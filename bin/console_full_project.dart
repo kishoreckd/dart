@@ -40,7 +40,7 @@ bool isemptylist(Object object) {
 }
 
 class HttpResponse {
-  final int code;
+  late int code;
   final String? error;
 
   HttpResponse.ok()
@@ -60,5 +60,4 @@ class HttpResponse {
     }
   }
 }
-
 
