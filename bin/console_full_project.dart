@@ -1,4 +1,3 @@
-
 import 'package:console_full_project/src/calculate.dart';
 
 // void main(List<String> arguments) {
@@ -15,5 +14,51 @@ void main(List<String> args) {
   print('Sub: ' + calculateSub().toString());
   print('Multiply: ' + calculateMultiply().toString());
   print('Divide: ' + calculatedivide().toString());
-
 }
+
+// /**example of if- else statement */
+// void main(List<String> args) {
+//   drivetwoseatedcar('lol','lok');
+// }
+
+// void drivetwoseatedcar(String driver, [String? passenger]) {
+//   if (passenger != null) {
+//     print('$driver cruises with $passenger today');
+//   } else {
+//     print('$driver travel alone today');
+//   }
+// }
+
+/***Null assertion */
+
+bool isemptylist(Object object) {
+  if (object is! List) {
+    return false;
+  } else {
+    return object.isEmpty;
+  }
+}
+
+class HttpResponse {
+  final int code;
+  final String? error;
+
+  HttpResponse.ok()
+      : code = 200,
+        error = null;
+
+  HttpResponse.notfound()
+      : code = 404,
+        error = 'not found';
+
+  @override
+  String toString() {
+    if (code == 200) {
+      return 'ok';
+    } else {
+      return 'error $code';
+    }
+  }
+}
+
+
