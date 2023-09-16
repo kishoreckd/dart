@@ -14,6 +14,10 @@ void main(List<String> args) {
   print('Sub: ' + calculateSub().toString());
   print('Multiply: ' + calculateMultiply().toString());
   print('Divide: ' + calculatedivide().toString());
+
+/***runes returns unicode */
+  var runes = Runes('Hello').map((e) => e.toRadixString(16).padLeft(4,'0'));
+  print(runes);
 }
 
 // /**example of if- else statement */
@@ -29,35 +33,35 @@ void main(List<String> args) {
 //   }
 // }
 
-/***Null assertion */
+// /***Null assertion */
 
-bool isemptylist(Object object) {
-  if (object is! List) {
-    return false;
-  } else {
-    return object.isEmpty;
-  }
-}
+// bool isemptylist(Object object) {
+//   if (object is! List) {
+//     return false;
+//   } else {
+//     return object.isEmpty;
+//   }
+// }
 
-class HttpResponse {
-  late int code;
-  final String? error;
+// class HttpResponse {
+//   late int code;
+//   final String? error;
 
-  HttpResponse.ok()
-      : code = 200,
-        error = null;
+//   HttpResponse.ok()
+//       : code = 200,
+//         error = null;
 
-  HttpResponse.notfound()
-      : code = 404,
-        error = 'not found';
+//   HttpResponse.notfound()
+//       : code = 404,
+//         error = 'not found';
 
-  @override
-  String toString() {
-    if (code == 200) {
-      return 'ok';
-    } else {
-      return 'error $code';
-    }
-  }
-}
+//   @override
+//   String toString() {
+//     if (code == 200) {
+//       return 'ok';
+//     } else {
+//       return 'error $code';
+//     }
+//   }
+// }
 
