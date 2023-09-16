@@ -16,9 +16,31 @@ void main(List<String> args) {
   print('Divide: ' + calculatedivide().toString());
 
 /***runes returns unicode */
-  var runes = Runes('Hello').map((e) => e.toRadixString(16).padLeft(4,'0'));
+  var runes = Runes('Hello').map((e) => e.toRadixString(16).padLeft(4, '0'));
   print(runes);
+
+/**Anonyms function */
+  var lists = ['hello', 'everyone', 'to dart']
+      .map((String s) => s.toUpperCase())
+      .toList();
+  print(lists);
+
+  reqiredPositional(0, 1);
+  optionalPositional(12);
+  requiredName(a: 10, b: 11);
+  optionalNamed(a: 10, b: 10);
+  namedHybrid(a: 10);
 }
+
+void reqiredPositional(int a, int b) => print('$a $b');
+
+void optionalPositional([int a = 5, int? b]) => print('$a $b');
+
+void requiredName({required int b, required int a}) => print('$a $b');
+
+void optionalNamed({int a = 5, required int b}) => print('$a $b');
+
+void namedHybrid({required int a, int b = 10}) => print('$a $b');
 
 // /**example of if- else statement */
 // void main(List<String> args) {
