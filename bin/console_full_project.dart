@@ -1,5 +1,4 @@
 import 'package:console_full_project/src/calculate.dart';
-import 'package:test/test.dart';
 
 // void main(List<String> arguments) {
 //   try {
@@ -10,29 +9,30 @@ import 'package:test/test.dart';
 //   }
 // }
 
+
+
 void main(List<String> args) {
- 
-//   print('Add: ' + calculateAdd().toString());
-//   print('Sub: ' + calculateSub().toString());
-//   print('Multiply: ' + calculateMultiply().toString());
-//   print('Divide: ' + calculatedivide().toString());
+  print('Add: ' + calculateAdd().toString());
+  print('Sub: ' + calculateSub().toString());
+  print('Multiply: ' + calculateMultiply().toString());
+  print('Divide: ' + calculatedivide().toString());
 
-// /***runes returns unicode */
-//   var runes = Runes('Hello').map((e) => e.toRadixString(16).padLeft(4, '0'));
-//   print('runes  $runes');
+/***runes returns unicode */
+  var runes = Runes('Hello').map((e) => e.toRadixString(16).padLeft(4, '0'));
+  print('runes  $runes');
 
-// /**Anonyms function */
-//   var lists = ['hello', 'everyone', 'to dart']
-//       .map((String s) => s.toUpperCase())
-//       .toList();
-//   print('lists $lists');
+/**Anonyms function */
+  var lists = ['hello', 'everyone', 'to dart']
+      .map((String s) => s.toUpperCase())
+      .toList();
+  print('lists $lists');
 
-// /**Positional */
-//   reqiredPositional(0, 1);
-//   optionalPositional(12);
-//   requiredName(a: 10, b: 11);
-//   optionalNamed(a: 10, b: 10);
-//   namedHybrid(a: 10);
+/**Positional */
+  reqiredPositional(0, 1);
+  optionalPositional(12);
+  requiredName(a: 10, b: 11);
+  optionalNamed(a: 10, b: 10);
+  namedHybrid(a: 10);
 }
 
 void reqiredPositional(int a, int b) => print('$a $b');
