@@ -9,6 +9,8 @@ import 'package:console_full_project/src/calculate.dart';
 //   }
 // }
 
+
+
 void main(List<String> args) {
   print('Add: ' + calculateAdd().toString());
   print('Sub: ' + calculateSub().toString());
@@ -17,14 +19,15 @@ void main(List<String> args) {
 
 /***runes returns unicode */
   var runes = Runes('Hello').map((e) => e.toRadixString(16).padLeft(4, '0'));
-  print(runes);
+  print('runes  $runes');
 
 /**Anonyms function */
   var lists = ['hello', 'everyone', 'to dart']
       .map((String s) => s.toUpperCase())
       .toList();
-  print(lists);
+  print('lists $lists');
 
+/**Positional */
   reqiredPositional(0, 1);
   optionalPositional(12);
   requiredName(a: 10, b: 11);
@@ -86,4 +89,6 @@ void namedHybrid({required int a, int b = 10}) => print('$a $b');
 //     }
 //   }
 // }
+
+
 
