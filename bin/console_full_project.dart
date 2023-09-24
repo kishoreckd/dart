@@ -12,10 +12,10 @@ import 'package:console_full_project/src/calculate.dart';
 
 
 void main(List<String> args) {
-  print('Add: ' + calculateAdd().toString());
-  print('Sub: ' + calculateSub().toString());
-  print('Multiply: ' + calculateMultiply().toString());
-  print('Divide: ' + calculatedivide().toString());
+  print('Add: ${calculateAdd()}');
+  print('Sub: ${calculateSub()}');
+  print('Multiply: ${calculateMultiply()}');
+  print('Divide: ${calculatedivide()}');
 
 /***runes returns unicode */
   var runes = Runes('Hello').map((e) => e.toRadixString(16).padLeft(4, '0'));

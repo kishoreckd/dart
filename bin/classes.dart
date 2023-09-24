@@ -2,7 +2,7 @@ class Animal {
   final String name;
   Animal({required this.name});
 
-  void WhatAmI() => print('I\'m An animal ');
+  void whatAmI() => print('I\'m An animal ');
 }
 
 class Bird extends Animal {
@@ -14,6 +14,7 @@ class Duck extends Animal {
 }
 
 void main() {
+  // ignore: unused_local_variable
   Duck duck = Duck('momo');
   
 }
